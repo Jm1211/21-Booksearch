@@ -40,16 +40,16 @@ function App() {
         <Routes>
           <Route 
             path='/' 
-            element={<SearchBooks />} 
+            element={<SearchBooks/>} 
           />
           <Route 
             path='/saved' 
-            element={<SavedBooks />} 
+            element={<SavedBooks/>} 
           />
           <Route 
             path='*'
-            element={<h1 className='display-2'>Wrong page!</h1>}
-          />
+            element={<h1 className='display-2'>Wrong page!</h1>} />
+          
         </Routes>
       </>
     </Router>

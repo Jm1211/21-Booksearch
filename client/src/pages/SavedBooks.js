@@ -9,7 +9,7 @@ import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
   const {loading,data } = useQuery(QUERY_ME);
-  const [removeBook, {error}] = useMutation(REMOVE_BOOK);
+  const [removeBook] = useMutation(REMOVE_BOOK);
   const userData = data?.me || {};
 
 
@@ -22,14 +22,10 @@ const SavedBooks = () => {
     }
 
     try {
-      const response = await removeBook({
+      const {data} = await removeBook({
         variables: {bookId}
       });
-      console.log('deleted book:', response);
-        if(error) {
-          console.log (error);
-        }
-
+    
       removeBookId(bookId)
 
     }catch (err) {
@@ -52,7 +48,7 @@ const SavedBooks = () => {
       </Jumbotron>
       <Container>
         <h2>
-          {userData.savedBooks.length
+          {userData.savedBooks && userData.savedBooks.length
             ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
         </h2>
