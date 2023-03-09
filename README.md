@@ -13,17 +13,16 @@ This application was originally a functioning Google Books Api search engine tha
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+https://booksearch-mern-21.herokuapp.com/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Search any book title you would like. After logging in you may save books to your "see your books" tab and also remove them once added.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+<img width="1414" alt="Screenshot 2023-03-09 at 12 39 02 AM" src="https://user-images.githubusercontent.com/110876203/223953547-a4bbcbb8-4cb4-49ed-b1fe-e2849bf29c45.png">
+
+
 
 
 
